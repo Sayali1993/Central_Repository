@@ -1,0 +1,9 @@
+banana
+is
+an
+apple
+mango
+if
+firuit
+is
+this
