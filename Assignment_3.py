@@ -1,13 +1,11 @@
 import random
 import datetime
 import re
-from collections import Counter
 from random import randrange
 log_File = open("log.txt", "w")
 list_ERROR, list_WARNING, list_INFO, list_DEBUG, list_CRITICAL = ([] for i in range(5))
 
 random_list = ["ERROR", "WARNING", "INFO", "DEBUG", "CRITICAL"]
-
 
 def random_date(start , l):
    current = start
@@ -62,7 +60,6 @@ def getDuplicatesWithCount(list_all: []):
          summation += pr
     return dictOfElems
 
-
 print("{} occurs {} time".format(random_list[0], len(list_ERROR)))
 
 error_dic = getDuplicatesWithCount(list_ERROR)
@@ -71,7 +68,6 @@ for key, value in error_dic.items():
 print("ERROR Codes summation:", summation, '\n')
 
 print("{} occurs {} time".format(random_list[1], len(list_WARNING)))
-
 warning_dic = getDuplicatesWithCount(list_WARNING)
 for key, value in warning_dic.items():
     print("WARNING CODE", key, ': occurs', value, "times.")
@@ -94,3 +90,5 @@ critical_dic = getDuplicatesWithCount(list_CRITICAL)
 for key, value in critical_dic.items():
     print("CRITICAL CODE", key, ': occurs', value, "times.")
 print("CRITICAL Codes summation:", summation, '\n')
+
+log_File.close()
