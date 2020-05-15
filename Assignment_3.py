@@ -64,14 +64,14 @@ def getDuplicatesWithCount(list_all: []):
 
 
 print("{} occurs {} time".format(random_list[0], len(list_ERROR)))
-print(list_ERROR)
+
 error_dic = getDuplicatesWithCount(list_ERROR)
 for key, value in error_dic.items():
     print("ERROR CODE", key, ': occurs', value, "times.")
 print("ERROR Codes summation:", summation, '\n')
 
 print("{} occurs {} time".format(random_list[1], len(list_WARNING)))
-print(list_WARNING)
+
 warning_dic = getDuplicatesWithCount(list_WARNING)
 for key, value in warning_dic.items():
     print("WARNING CODE", key, ': occurs', value, "times.")
