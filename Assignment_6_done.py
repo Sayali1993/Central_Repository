@@ -1,6 +1,4 @@
 import os
-
-
 list_files = ["file1.txt", "file1.pdf", "file1.xlsx", "file1.xls", "file2.txt", "file3.pdf", "file4.mp4", "file2.ppt.txt"]
 print("\nList of files : ", list_files)
 print("-------------\n")
