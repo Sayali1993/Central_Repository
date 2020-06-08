@@ -9,7 +9,6 @@ while True:
             total_data_size = int(input("Enter the total size of data which will be divided into {} files : "
                                .format(no_of_files)))
             each_file_size = total_data_size/no_of_files
-
             stat = shutil.disk_usage(path)
             if each_file_size > stat[2]:
                 print("* No sufficient memory *")
